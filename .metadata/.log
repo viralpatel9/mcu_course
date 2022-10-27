@@ -1,0 +1,21 @@
+!SESSION 2022-10-27 22:46:16.424 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-10-27 22:46:39.967
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-10-27 22:46:40.045
+!MESSAGE Log4j initialized with config file C:\Mcu_course github\mcu_course\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-10-27 22:46:43.148
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-10-27 22:49:25.111
+!MESSAGE Indexed '001HelloWorld' (3 sources, 0 headers) in 0.985 sec: 67 declarations; 38 references; 11 unresolved inclusions; 0 syntax errors; 31 unresolved names (23%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-27 22:54:52.326
+!MESSAGE SWV configuration; base: 2000000; minDiv: 1; maxDiv: 1; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
