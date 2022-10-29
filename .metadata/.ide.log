@@ -256,3 +256,47 @@
 2022-10-27 22:49:24,211 [INFO] ApiDb:443 - Save user favorites file C:\Users\ViralPatel/.stm32cubeide/favorites.mcus.txt: 0 item(s)
 2022-10-27 22:49:24,211 [INFO] ApiDb:447 - User favorites MCUs=[]
 2022-10-27 22:55:23,466 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2022-10-28 09:03:06,831 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-28 09:03:07,002 [INFO] McuFinderGlobals:57 - Set McuFinderConnectedMode to true
+2022-10-28 09:03:07,011 [INFO] MultiScanPanel:195 - Auto-refresh data requested => check proxy status ongoing
+2022-10-28 09:03:07,016 [INFO] FinderPluginLoader:92 - Searching for filters in installed packs
+2022-10-28 09:03:08,494 [INFO] LoadUrlFilesThread:177 - End of LoadServerUrlFiles without Thread
+2022-10-28 09:03:08,495 [INFO] DetailPanel:339 - Set advertising image to C:/Users/ViralPatel/STM32Cube/Repository/\en.Prom_NBSTM32U50921.jpg
+2022-10-28 09:03:09,753 [INFO] MultiScanPanel:778 - Auto Refresh Data is not needed
+2022-10-28 09:09:40,627 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-28 09:09:40,753 [INFO] McuFinderGlobals:57 - Set McuFinderConnectedMode to true
+2022-10-28 09:09:40,754 [INFO] MultiScanPanel:195 - Auto-refresh data requested => check proxy status ongoing
+2022-10-28 09:09:40,755 [INFO] FinderPluginLoader:92 - Searching for filters in installed packs
+2022-10-28 09:09:41,755 [INFO] LoadUrlFilesThread:177 - End of LoadServerUrlFiles without Thread
+2022-10-28 09:09:41,755 [INFO] DetailPanel:339 - Set advertising image to C:/Users/ViralPatel/STM32Cube/Repository/\en.Prom_NBSTM32U50921.jpg
+2022-10-28 09:09:42,175 [INFO] MultiScanPanel:778 - Auto Refresh Data is not needed
+2022-10-28 09:10:33,765 [INFO] MultiScanPanel:195 - Auto-refresh data requested => check proxy status ongoing
+2022-10-28 09:10:33,922 [INFO] LoadUrlFilesThread:177 - End of LoadServerUrlFiles without Thread
+2022-10-28 09:10:33,922 [INFO] DetailPanel:339 - Set advertising image to C:/Users/ViralPatel/STM32Cube/Repository/\en.Prom_NBSTM32U50921.jpg
+2022-10-28 09:10:33,939 [INFO] DbBoards:628 - Loading board mini-images...
+2022-10-28 09:10:34,055 [ERROR] DbBoards:648 - No image file defined for board B-WB1M-WPAN1
+2022-10-28 09:10:34,055 [ERROR] DbBoards:648 - No image file defined for board NUCLEO-C031C6
+2022-10-28 09:10:35,098 [ERROR] DbBoards:648 - No image file defined for board STEVAL-STWINBX1
+2022-10-28 09:10:35,151 [ERROR] DbBoards:648 - No image file defined for board STM32091C-EVAL
+2022-10-28 09:10:35,151 [ERROR] DbBoards:648 - No image file defined for board STM32100E-EVAL
+2022-10-28 09:10:35,151 [ERROR] DbBoards:648 - No image file defined for board STM3210C-EVAL
+2022-10-28 09:10:35,163 [ERROR] DbBoards:648 - No image file defined for board STM3221G-EVAL
+2022-10-28 09:10:35,163 [ERROR] DbBoards:648 - No image file defined for board STM32303C-EVAL
+2022-10-28 09:10:35,247 [ERROR] DbBoards:648 - No image file defined for board STM32479I-EVAL
+2022-10-28 09:10:35,247 [ERROR] DbBoards:648 - No image file defined for board STM32746G-EVAL2
+2022-10-28 09:10:35,254 [ERROR] DbBoards:648 - No image file defined for board STM32C0116-DK
+2022-10-28 09:10:35,254 [ERROR] DbBoards:648 - No image file defined for board STM32C0316-DK
+2022-10-28 09:10:35,287 [ERROR] DbBoards:648 - No image file defined for board STM32F401C-DISCO
+2022-10-28 09:10:35,342 [ERROR] DbBoards:648 - No image file defined for board STM32F7308-DK
+2022-10-28 09:10:35,383 [ERROR] DbBoards:648 - No image file defined for board STM32F779I-EVAL
+2022-10-28 09:10:35,528 [ERROR] DbBoards:648 - No image file defined for board STM32H747I-EVAL
+2022-10-28 09:10:35,567 [ERROR] DbBoards:648 - No image file defined for board STM32L-DISCOVERY
+2022-10-28 09:10:35,603 [ERROR] DbBoards:648 - No image file defined for board STM32L152D-EVAL
+2022-10-28 09:10:35,740 [ERROR] DbBoards:648 - No image file defined for board STM32MP135F-DK
+2022-10-28 09:10:35,913 [INFO] DbBoards:651 - Loaded 157 board mini-images
+2022-10-28 09:10:35,939 [INFO] MultiScanPanel:778 - Auto Refresh Data is not needed
+2022-10-28 09:10:56,963 [INFO] McuFinderGlobals:57 - Set McuFinderConnectedMode to true
+2022-10-28 09:10:56,965 [INFO] ApiDb:443 - Save user favorites file C:\Users\ViralPatel/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-10-28 09:10:56,966 [INFO] ApiDb:447 - User favorites MCUs=[]
+2022-10-28 09:10:56,972 [INFO] ApiDb:443 - Save user favorites file C:\Users\ViralPatel/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-10-28 09:10:56,972 [INFO] ApiDb:447 - User favorites Boards=[]
