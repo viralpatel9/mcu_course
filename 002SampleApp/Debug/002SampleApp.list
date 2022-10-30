@@ -528,8 +528,6 @@ int main()
  80004c0:	4803      	ldr	r0, [pc, #12]	; (80004d0 <main+0x5c>)
  80004c2:	f7ff ff0f 	bl	80002e4 <display_numbers>
 
-
-
     return 0;
  80004c6:	2300      	movs	r3, #0
 }

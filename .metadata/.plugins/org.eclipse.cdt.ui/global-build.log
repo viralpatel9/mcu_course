@@ -1,21 +1,21 @@
-22:36:17 **** Incremental Build of configuration Debug for project 002SampleApp ****
+22:38:35 **** Incremental Build of configuration Debug for project 004Peri_clock ****
 make -j8 all 
-arm-none-eabi-size   002SampleApp.elf 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "004Peri_clock.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Mcu_course github\mcu_course\004Peri_clock\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004Peri_clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004Peri_clock.elf
+ 
+arm-none-eabi-size   004Peri_clock.elf 
+arm-none-eabi-objdump -h -S  004Peri_clock.elf  > "004Peri_clock.list"
    text	   data	    bss	    dec	    hex	filename
-   6712	    180	   1588	   8480	   2120	002SampleApp.elf
+    716	      8	   1568	   2292	    8f4	004Peri_clock.elf
 Finished building: default.size.stdout
  
-22:36:30 **** Incremental Build of configuration Debug for project 002SampleApp ****
-make -j8 all 
-arm-none-eabi-size   002SampleApp.elf 
-   text	   data	    bss	    dec	    hex	filename
-   6712	    180	   1588	   8480	   2120	002SampleApp.elf
-Finished building: default.size.stdout
+Finished building: 004Peri_clock.list
  
-22:39:04 **** Incremental Build of configuration Debug for project 002SampleApp ****
+22:38:45 **** Incremental Build of configuration Debug for project 004Peri_clock ****
 make -j8 all 
-arm-none-eabi-size   002SampleApp.elf 
+arm-none-eabi-size   004Peri_clock.elf 
    text	   data	    bss	    dec	    hex	filename
-   6712	    180	   1588	   8480	   2120	002SampleApp.elf
+    716	      8	   1568	   2292	    8f4	004Peri_clock.elf
 Finished building: default.size.stdout
  
