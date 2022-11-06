@@ -715,3 +715,6 @@ org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$CyclicP
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-06 19:20:49.853
+!MESSAGE Indexed 'stm32f4xx_drives' (4 sources, 55 headers) in 0.232 sec: 1,996 declarations; 2,890 references; 1 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.041%)
