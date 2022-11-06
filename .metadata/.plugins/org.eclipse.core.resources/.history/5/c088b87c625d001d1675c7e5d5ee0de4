@@ -1,0 +1,19 @@
+/*
+ * stm32f407xx.h
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: ViralPatel
+ */
+
+#ifndef INC_STM32F407XX_H_
+#define INC_STM32F407XX_H_
+
+// define the flash and SRAM memories
+
+#define FLASH_BASEADDR				0x08000000U			// main memory in the datasheet is called flash memory
+#define SRAM1_BASEADDR				0x20000000U			//112kb bytes of SRM1
+#define SRMA2_BASEADDR				0x20001C00U			//after SRM1 112kb=112*1024 = some bytes and then convert it into hex
+#define ROM							0x1FFF0000U
+#define SRAM 						SRAM1_BASEADDR
+
+#endif /* INC_STM32F407XX_H_ */

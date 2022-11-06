@@ -1,0 +1,10 @@
+18:49:57 **** Clean-only build of configuration Debug for project stm32f4xx_drives ****
+make -j8 clean 
+rm -rf ./drivers/src/stm32f407xx_gpio_driver.d ./drivers/src/stm32f407xx_gpio_driver.o ./drivers/src/stm32f407xx_gpio_driver.su
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf default.size.stdout stm32f4xx_drives.elf stm32f4xx_drives.list stm32f4xx_drives.map
+ 
+
+18:49:57 Build Finished. 0 errors, 0 warnings. (took 269ms)
+
