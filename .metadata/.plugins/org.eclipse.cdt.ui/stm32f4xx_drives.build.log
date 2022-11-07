@@ -1,18 +1,25 @@
-19:50:19 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+08:09:35 **** Build of configuration Debug for project stm32f4xx_drives ****
 make -j8 all 
-arm-none-eabi-gcc "../drivers/src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/sttm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/sttm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_gpio_driver.d" -MT"drivers/src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_gpio_driver.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/sttm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/sttm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "stm32f4xx_drives.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Mcu_course github\mcu_course\sttm32f4xx_drives\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drives.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f4xx_drives.elf
- 
-arm-none-eabi-size   stm32f4xx_drives.elf 
-arm-none-eabi-objdump -h -S  stm32f4xx_drives.elf  > "stm32f4xx_drives.list"
-   text	   data	    bss	    dec	    hex	filename
-    684	      8	   1568	   2260	    8d4	stm32f4xx_drives.elf
-Finished building: default.size.stdout
- 
-Finished building: stm32f4xx_drives.list
- 
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_gpio_driver.d" -MT"drivers/src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_gpio_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../drivers/src/stm32f407xx_gpio_driver.c: In function 'GPIO_ToggleOutputPin':
+../drivers/src/stm32f407xx_gpio_driver.c:157:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+  157 | void GPIO_IRQHandling(uint8_t PinNumber)
+      | ^~~~
+../drivers/src/stm32f407xx_gpio_driver.c: In function 'GPIO_ReadFromInputPin':
+../drivers/src/stm32f407xx_gpio_driver.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+  134 | }
+      | ^
+../drivers/src/stm32f407xx_gpio_driver.c: In function 'GPIO_ReadFromInputPort':
+../drivers/src/stm32f407xx_gpio_driver.c:139:1: warning: control reaches end of non-void function [-Wreturn-type]
+  139 | }
+      | ^
+make: *** [drivers/src/subdir.mk:19: drivers/src/stm32f407xx_gpio_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
 
-19:50:20 Build Finished. 0 errors, 0 warnings. (took 500ms)
+08:09:37 Build Failed. 3 errors, 2 warnings. (took 1s.969ms)
 
