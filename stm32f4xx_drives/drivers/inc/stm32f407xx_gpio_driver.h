@@ -10,7 +10,7 @@
 
 #include "stm32f407xx.h"
 
-#endif /* INC_STM32F407XX_GIO_DRIVER_H_ */
+
 
 // this is the configuration strucure of the GPIO pin
 typedef struct
@@ -110,6 +110,8 @@ void GPIO_IRQConfig(uint8_t IRQNumber, uint8_t IRQPriority, uint8_t EnorDi);
 void GPIO_IRQHandling(uint8_t PinNumber);
 
 
+
+#endif /* INC_STM32F407XX_GIO_DRIVER_H_ */
 
 
 
