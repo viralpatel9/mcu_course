@@ -1,4 +1,4 @@
-Src/003led_button_ext.o: ../Src/003led_button_ext.c \
+Src/main.o: ../Src/main.c \
  C:/Mcu_course\ github/mcu_course/stm32f4xx_drives/drivers/inc/stm32f407xx.h \
  C:/Mcu_course\ github/mcu_course/stm32f4xx_drives/drivers/inc/stm32f407xx_gpio_driver.h \
  C:/Mcu_course\ github/mcu_course/stm32f4xx_drives/drivers/inc/stm32f407xx.h

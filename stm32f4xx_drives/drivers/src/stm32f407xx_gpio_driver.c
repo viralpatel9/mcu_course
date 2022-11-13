@@ -112,7 +112,11 @@ void GPIO_Init(GPIO_Handle_t *pGPIOHandle) {
 
 		}
 		//2. COnfigure the GPIO port selection in SYSCFG_EXTICR
-
+		uint8_t temp1 = pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber/4;
+		uint8_t temp2 = pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber%4;
+		uint8_t portcode = GPIOA_BASEADDR_TO_CODE(pGPIOHandle->pGPIOx);
+		SYSCFG_PCLK_EN();
+		SYSCFG->EXTICR[temp1]=portcode << (temp2*4);
 
 		//3. ENable the Exti intrrupt delivery using IMR
 		EXTI->IMR |= (1<<pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);
@@ -220,12 +224,65 @@ void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint16_t Value) {
 void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber) {
 	pGPIOx->ODR = pGPIOx->ODR ^ (1 << PinNumber);
 }
+
 /*
  * IRQ Configuration and ISR Handling
  */
-void GPIO_IRQConfig(uint8_t IRQNumber, uint8_t IRQPriority, uint8_t EnorDi) {
+void GPIO_IRQConfig(uint8_t IRQNumber, uint8_t EnorDi)
+{
+	if(EnorDi == ENABLE)
+	{
+		if(IRQNumber <=31)
+		{
+			// program ISER0 Register
+			*NVIC_ISER0 |=(1<<IRQNumber);
 
+		}
+		else if (IRQNumber>31 && IRQNumber<64)
+		{
+			// Program the ISER1 Register
+			*NVIC_ISER1 |= (1<<(IRQNumber%32));
+		}
+		else if(IRQNumber>=64 && IRQNumber<96)
+		{
+			// Program the ISER2 register
+			*NVIC_ISER3 |=(1<<(IRQNumber%64));
+		}
+	}
+	else
+	{
+		if(IRQNumber <=31)
+		{
+			*NVIC_ICER0 |=(1<<IRQNumber);
+		}
+		else if (IRQNumber>31 && IRQNumber<64)
+		{
+			*NVIC_ICER1 |=(1<<(IRQNumber%32));
+		}
+		else if(IRQNumber>=64 && IRQNumber<96)
+		{
+			*NVIC_ICER3 |=(1<<(IRQNumber%64));
+		}
+	}
 }
-void GPIO_IRQHandling(uint8_t PinNumber) {
 
+void GPIO_IRQPriorityConfig(uint8_t IRQNumber,uint8_t IRQPriority)
+{
+	//1. first lets find out the ipr register
+	uint8_t iprx = IRQNumber/4;
+	uint8_t iprx_section = IRQNumber%4;
+	uint8_t shift_amount = (8*iprx_section)+(8-NO_PR_BITS_IMPLEMENTED);
+	*(NVIC_PR_BASE_ADDR + (iprx *4)) |= (IRQPriority<< shift_amount);
+}
+
+
+
+void GPIO_IRQHandling(uint8_t PinNumber)
+{
+	//clear the exti pr register corresponding to the pin number
+	if(EXTI->PR & (1<< PinNumber))
+	{
+		//clear
+		EXTI->PR |= (1<<PinNumber);
+	}
 }

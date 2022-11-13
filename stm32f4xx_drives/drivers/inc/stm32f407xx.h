@@ -11,8 +11,29 @@
 #include <stdint.h>
 
 #define __vo volatile
-// define the flash and SRAM memories
 
+
+/*
+ *  Processsor specific detials
+ *  ARM NVIC Registers for ISERx Registers
+ */
+#define NVIC_ISER0					((__vo uint32_t*)0xE000E100)
+#define NVIC_ISER1					((__vo uint32_t*)0xE000E104)
+#define NVIC_ISER2					((__vo uint32_t*)0xE000E108)
+#define NVIC_ISER3					((__vo uint32_t*)0xE000E10c)
+
+
+// ARM NVIC Register for the ICERx Register Adresses
+#define NVIC_ICER0					((__vo uint32_t*)0xE000E180)
+#define NVIC_ICER1					((__vo uint32_t*)0xE000E184)
+#define NVIC_ICER2					((__vo uint32_t*)0xE000E188)
+#define NVIC_ICER3					((__vo uint32_t*)0xE000E18c)
+
+#define NVIC_PR_BASE_ADDR			((__vo uint32_t*)0xE000E400)
+
+#define NO_PR_BITS_IMPLEMENTED 		4
+
+// define the flash and SRAM memories
 #define FLASH_BASEADDR				0x08000000U			// main memory in the datasheet is called flash memory
 #define SRAM1_BASEADDR				0x20000000U			//112kb bytes of SRM1
 #define SRMA2_BASEADDR				0x20001C00U			//after SRM1 112kb=112*1024 = some bytes and then convert it into hex
@@ -238,6 +259,29 @@ typedef struct
 #define GPIOH_REG_RESET()			do{(RCC->AHB1RSTR |=(1<<0));	(RCC->AHB1RSTR &=~(1<<7)); }while(0)
 #define GPIOI_REG_RESET()			do{(RCC->AHB1RSTR |=(1<<0));	(RCC->AHB1RSTR &=~(1<<8)); }while(0)
 
+// This methodis called c conditional operator
+
+#define GPIOA_BASEADDR_TO_CODE(x)	((x== GPIOA)? 0:\
+									 (x== GPIOB)? 1:\
+									 (x== GPIOC)? 2:\
+									 (x== GPIOD)? 3:\
+									 (x== GPIOE)? 4:\
+									 (x== GPIOF)? 5:\
+									 (x== GPIOG)? 6:\
+									 (x== GPIOH)? 7:\
+									 (x== GPIOI)? 8:0)
+
+/*
+ *   IRQ number for MCU
+ */
+#define IRQ_NO_EXTI0		6
+#define IRQ_NO_EXTI1		7
+#define IRQ_NO_EXTI2		8
+#define IRQ_NO_EXTI3		9
+#define IRQ_NO_EXTI4		10
+#define IRQ_NO_EXTI9_5		23
+#define IRQ_NO_EXTI15_10	40
+
 //Some generic macros
 #define ENABLE 		1
 #define DISABLE 	0
@@ -245,6 +289,8 @@ typedef struct
 #define RESET 		DISABLE
 #define GPIO_PIN_SET SET
 #define GPIO_PIN_RESET RESET
+
+
 
 #include "stm32f407xx_gpio_driver.h"
 
