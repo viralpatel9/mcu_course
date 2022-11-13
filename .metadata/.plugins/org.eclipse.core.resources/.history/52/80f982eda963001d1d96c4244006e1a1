@@ -59,7 +59,6 @@ int main(void)
 
 void EXTI9_5_IRQHandler(void)
 {
-	delay();
 	GPIO_IRQHandling(GPIO_PIN_NO_5);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
 }

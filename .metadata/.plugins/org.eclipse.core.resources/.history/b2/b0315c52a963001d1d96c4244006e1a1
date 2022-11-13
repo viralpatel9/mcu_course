@@ -5,7 +5,6 @@
  *      Author: ViralPatel
  */
 
-#include<string.h>
 #include "stm32f407xx.h"
 #include <stdint.h>
 #define HIGH 1
@@ -20,9 +19,7 @@ int main(void)
 {
     /* Loop forever */
 	GPIO_Handle_t GpioLed,GPIOBtn;
-
 	memset(&GpioLed,0,sizeof(GpioLed));
-	memset(&GPIOBtn,0,sizeof(GpioLed));
 
 	// this si the led gpio configuration
 	GpioLed.pGPIOx = GPIOD;
@@ -59,7 +56,6 @@ int main(void)
 
 void EXTI9_5_IRQHandler(void)
 {
-	delay();
 	GPIO_IRQHandling(GPIO_PIN_NO_5);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
 }
