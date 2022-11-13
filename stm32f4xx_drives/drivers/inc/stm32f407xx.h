@@ -64,8 +64,7 @@
 
 /************peripheral register definition*******************/
 
-typedef struct
-{
+typedef struct {
 	__vo uint32_t MODER;					//defining structural
 	__vo uint32_t OTYPER;
 	__vo uint32_t OSPEEDR;
@@ -75,11 +74,9 @@ typedef struct
 	__vo uint32_t BSRR;
 	__vo uint32_t LCKR;
 	__vo uint32_t AFR[2];				// AFR[0] is AFLR and AFR[1] is the AFHR
-}GPIO_RegDef_t;
+} GPIO_RegDef_t;
 
-
-typedef struct
-{
+typedef struct {
 	__vo uint32_t CR;
 	__vo uint32_t PLLCFGR;
 	__vo uint32_t CFGR;
@@ -87,34 +84,66 @@ typedef struct
 	__vo uint32_t AHB1RSTR;
 	__vo uint32_t AHB2RSTR;
 	__vo uint32_t AHB3RSTR;
-	uint32_t 	  RESERVED0;
+	uint32_t RESERVED0;
 	__vo uint32_t APB1RSTR;
 	__vo uint32_t APB2RSTR;
-	uint32_t      RESERVED1[2];
+	uint32_t RESERVED1[2];
 	__vo uint32_t AHB1ENR;
 	__vo uint32_t AHB2ENR;
 	__vo uint32_t AHB3ENR;
-	uint32_t      RESERVED2;
+	uint32_t RESERVED2;
 	__vo uint32_t APB1ENR;
 	__vo uint32_t APB2ENR;
-	uint32_t      RESERVED3[2];
+	uint32_t RESERVED3[2];
 	__vo uint32_t AHB1LPENR;
 	__vo uint32_t AHB2LPENR;
 	__vo uint32_t AHB3LPENR;
-	uint32_t      RESERVED4;
+	uint32_t RESERVED4;
 	__vo uint32_t APB1LPENR;
 	__vo uint32_t APB2LPENR;
-	uint32_t      RESERVED5[2];
+	uint32_t RESERVED5[2];
 	__vo uint32_t BDCR;
 	__vo uint32_t CSR;
-	uint32_t      RESERVED6[2];
+	uint32_t RESERVED6[2];
 	__vo uint32_t SSCGR;
 	__vo uint32_t PLLI2SCFGR;
 	__vo uint32_t PLLSAICFGR;
 	__vo uint32_t DCKCFGR;
 	__vo uint32_t CKGATENR;
 	__vo uint32_t DCKCFGR2;
-}RCC_RegDef_t;
+} RCC_RegDef_t;
+
+
+/*
+ * 			PEripheral register definition structure of EXTI
+ */
+
+typedef struct
+{
+	__vo uint32_t IMR;
+	__vo uint32_t EMR;
+	__vo uint32_t RTSR;
+	__vo uint32_t FTSR;
+	__vo uint32_t SWIER;
+	__vo uint32_t PR;
+}EXTI_RegDef_t;
+
+
+/*
+ * 	Peripheral register structure for SYSCFG
+ */
+
+typedef struct
+{
+	__vo uint32_t MEMRMP;
+	__vo uint32_t PMC;
+	__vo uint32_t EXTICR[4];
+	uint32_t RESERVED1[2];
+	__vo uint32_t CMPCR;
+	__vo 	uint32_t RESERVED2[2];
+	uint32_t CFGR;
+}SYSCFG_RegDef_t;
+
 
 /******** peripheral definitions *********/
 
@@ -129,6 +158,10 @@ typedef struct
 #define GPIOI 						((GPIO_RegDef_t*)GPIOI_BASEADDR)
 
 #define RCC							((RCC_RegDef_t*)RCC_BASEADDR)
+
+#define EXTI						((EXTI_RegDef_t*)EXTI_BASEADDR)
+
+#define SYSCFG						((SYSCFG_RegDef_t*)SYSCFG_BASEADDR)
 
 // Clock enable macros for the GPIOx peripherals
 
@@ -148,20 +181,17 @@ typedef struct
 #define I2C2_PCLK_EN() 		(RCC->APB1ENR |=(1<<22))
 #define I2C3_PCLK_EN() 		(RCC->APB1ENR |=(1<<23))
 
-
 // Clock enable macros for SPIx peripheral
 #define SPI1_PCLK_EN()			(RCC->APB2ENR |=(1<<12))
 #define SPI2_PCLK_EN()			(RCC->APB1ENR |=(1<<14))
 #define SPI3_PCLK_EN()			(RCC->APB1ENR |=(1<<15))
 #define SPI4_PCLK_EN()			(RCC->APB2ENR |=(1<<13))
 
-
 // Clock enable macros for USARTx peripherals
 #define USART1_PCLK_EN()			(RCC->APB2ENR |=(1<<4))
 #define USART2_PCLK_EN()			(RCC->APB1ENR |=(1<<17))
 #define USART3_PCLK_EN()			(RCC->APB1ENR |=(1<<18))
 #define USART6_PCLK_EN()			(RCC->APB2ENR |=(1<<5))
-
 
 // Clock enable macros for SYSCFG peripheral
 #define SYSCFG_PCLK_EN()			(RCC->APB2ENR |=(1<<14))
@@ -177,19 +207,16 @@ typedef struct
 #define GPIOH_PCLK_DI() 	(RCC->AHB1ENR &=~(1<<7))
 #define GPIOI_PCLK_DI() 	(RCC->AHB1ENR &=~(1<<8))
 
-
 // Clock disable macros for I2C Peripheral
 #define I2C1_PCLK_DI() 		(RCC->APB1ENR &=~(1<<21))
 #define I2C2_PCLK_DI() 		(RCC->APB1ENR &=~(1<<22))
 #define I2C3_PCLK_DI() 		(RCC->APB1ENR &=~(1<<23))
-
 
 // Clock disable macros for SPIx peripheral
 #define SPI1_PCLK_DI()			(RCC->APB2ENR &=~(1<<12))
 #define SPI2_PCLK_DI()			(RCC->APB1ENR &=~(1<<14))
 #define SPI3_PCLK_DI()			(RCC->APB1ENR &=~(1<<15))
 #define SPI4_PCLK_DI()			(RCC->APB2ENR &=~(1<<13))
-
 
 // Clock disable macros for USARTx peripherals
 #define USART1_PCLK_DI()			(RCC->APB2ENR &=~(1<<4))
@@ -218,7 +245,6 @@ typedef struct
 #define RESET 		DISABLE
 #define GPIO_PIN_SET SET
 #define GPIO_PIN_RESET RESET
-
 
 #include "stm32f407xx_gpio_driver.h"
 
