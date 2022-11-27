@@ -66,12 +66,6 @@ typedef struct
 #define SPI_SSM_EN			1
 #define SPI_SSM_DI			0
 
-//spi related status flag defiition
-#define SPI_TXE_FLAG 		(1<<SPI_SR_TXE)
-#define SPI_RXNE_FLAG		(1<<SPI_SR_RXNE)
-#define SPI_BUSY_FLAG		(1<<SPI_SR_BSY)
-
-
 /*
  * ******* API supported by the drivers
  *
@@ -88,8 +82,6 @@ void SPI_DeInt(SPI_RegDef_t *pSPIx);
 // data send and receive using the spi pin
 
 // blocking(non interrupts) and non blocking the api
-
-
 
 void SPI_SendData(SPI_RegDef_t *pSPIx, uint8_t *pTxBuffer, uint32_t Len);
 void SPI_ReceiveData(SPI_RegDef_t *pSPIx,uint8_t *pRxBuffer, uint32_t Len);

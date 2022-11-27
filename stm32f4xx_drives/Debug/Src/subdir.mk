@@ -5,19 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/005Button_interrupt.c \
-../Src/syscalls.c \
-../Src/sysmem.c 
+../Src/006spi_tx_testing.c 
 
 OBJS += \
-./Src/005Button_interrupt.o \
-./Src/syscalls.o \
-./Src/sysmem.o 
+./Src/006spi_tx_testing.o 
 
 C_DEPS += \
-./Src/005Button_interrupt.d \
-./Src/syscalls.d \
-./Src/sysmem.d 
+./Src/006spi_tx_testing.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -27,7 +21,7 @@ Src/%.o Src/%.su: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/005Button_interrupt.d ./Src/005Button_interrupt.o ./Src/005Button_interrupt.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+	-$(RM) ./Src/006spi_tx_testing.d ./Src/006spi_tx_testing.o ./Src/006spi_tx_testing.su
 
 .PHONY: clean-Src
 
