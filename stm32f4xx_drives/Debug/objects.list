@@ -1,4 +1,4 @@
-"./Src/006spi_tx_testing.o"
+"./Src/007spi_txonly_arduino.o"
 "./Startup/startup_stm32f407vgtx.o"
 "./drivers/src/stm32f407xx_gpio_driver.o"
 "./drivers/src/stm32f407xx_spi_driver.o"

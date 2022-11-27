@@ -3,3 +3,6 @@
 ../drivers/src/stm32f407xx_spi_driver.c:92:6:SPI_DeInt	16	static
 ../drivers/src/stm32f407xx_spi_driver.c:103:9:SPI_GetFlagStatus	16	static
 ../drivers/src/stm32f407xx_spi_driver.c:116:6:SPI_SendData	24	static
+../drivers/src/stm32f407xx_spi_driver.c:151:6:SPI_PeripheralControl	16	static
+../drivers/src/stm32f407xx_spi_driver.c:163:6:SPI_SSIConfig	16	static
+../drivers/src/stm32f407xx_spi_driver.c:175:6:SPI_SSOEConfig	16	static

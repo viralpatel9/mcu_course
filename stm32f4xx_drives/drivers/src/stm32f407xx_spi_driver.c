@@ -141,9 +141,74 @@ void SPI_SendData(SPI_RegDef_t *pSPIx, uint8_t *pTxBuffer, uint32_t Len)
 
 	}
 }
-void SPI_ReceiveData(SPI_RegDef_t *pSPIx,uint8_t *pRxBuffer, uint32_t Len);
+
+
+void SPI_ReceiveData(SPI_RegDef_t *pSPIx,uint8_t *pRxBuffer, uint32_t Len)
+{
+	while(Len>0)
+	{
+		//1. wait until RXE is set
+		while(SPI_GetFlagStatus(pSPIx, SPI_RXNE_FLAG) == FLAG_RESET);
+
+		//2. check the DFF bit in CR1
+		if((pSPIx->CR1 & (1<<SPI_CR1_DFF)))
+		{
+			//16 bit DFF
+			//1. Load the data froim DR to RX buffer
+			*((uint16_t*)pRxBuffer) = pSPIx->DR ;
+			Len--;
+			Len--;			//the len is decreae by 2 because of the 16 bit
+			(uint16_t*)pRxBuffer++;
+		}
+		else
+		{
+			//8 bit DFF
+			//1. Load the data from DR to Rxbuffer address
+			*pRxBuffer=pSPIx->DR;
+			Len--;					// the len is decrease by 1 bcoz of 8 bbit
+			pRxBuffer++;
+		}
+
+	}
+}
 
 
 void SPI_IRQConfig(uint8_t IRQNumber, uint8_t EnorDi);
 void SPI_IRQPriorityConfig(uint8_t IRQNumber,uint32_t IRQPriority);
 void SPI_IRQHandling(SPI_Handle_t *pHandle);
+
+void SPI_PeripheralControl(SPI_RegDef_t *pSPIx, uint8_t EnOrDi)
+{
+	if(EnOrDi ==ENABLE)
+	{
+		 pSPIx->CR1 |= (1<<SPI_CR1_SPE); 			//this enables the SPI
+	}
+	else
+	{
+		pSPIx->CR1 &= ~(1<<SPI_CR1_SPE);			//this disables the SPI
+	}
+}
+
+void SPI_SSIConfig(SPI_RegDef_t *pSPIx, uint8_t EnOrDi)
+{
+	if(EnOrDi ==ENABLE)
+	{
+		 pSPIx->CR1 |= (1<<SPI_CR1_SSI); 			//this enables the SPI
+	}
+	else
+	{
+		pSPIx->CR1 &= ~(1<<SPI_CR1_SSI);			//this disables the SPI
+	}
+}
+
+void SPI_SSOEConfig(SPI_RegDef_t *pSPIx, uint8_t EnOrDi)
+{
+	if(EnOrDi ==ENABLE)
+	{
+		 pSPIx->CR1 |= (1<<SPI_CR2_SSOE); 			//this enables the SPI
+	}
+	else
+	{
+		pSPIx->CR1 &= ~(1<<SPI_CR2_SSOE);			//this disables the SPI
+	}
+}
