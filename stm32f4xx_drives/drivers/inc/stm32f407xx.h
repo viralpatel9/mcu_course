@@ -9,9 +9,10 @@
 #define INC_STM32F407XX_H_
 
 #include <stdint.h>
+#include<stddef.h>
 
 #define __vo volatile
-
+#define __weak __attribute__((weak))
 
 /*
  *  Processsor specific detials
@@ -297,7 +298,7 @@ typedef struct
 									 (x== GPIOI)? 8:0)
 
 /*
- *   IRQ number for MCU
+ *   IRQ number for MCU for GPIO
  */
 #define IRQ_NO_EXTI0		6
 #define IRQ_NO_EXTI1		7
@@ -306,6 +307,13 @@ typedef struct
 #define IRQ_NO_EXTI4		10
 #define IRQ_NO_EXTI9_5		23
 #define IRQ_NO_EXTI15_10	40
+
+/*
+ *  		IRQ number definition for MCU for SPI peripheral
+ */
+#define IRQ_NO_SPI1			35
+#define IRQ_NO_SPI2			36
+#define IRQ_NO_SPI3			51
 
 
 /*
