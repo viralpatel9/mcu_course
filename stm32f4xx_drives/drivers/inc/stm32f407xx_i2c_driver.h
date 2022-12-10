@@ -48,4 +48,58 @@ typedef struct
 #define I2C_FM_DUTY_16_9		1
 
 
+//I2C related status flag defiition.... this can be found in status registers
+#define I2C_FLAG_TXE 			(1<<I2C_SR1_TXE)
+#define I2C_FLAG_RXNE			(1<<I2C_SR1_RXNE)
+#define I2C_FLAG_SB				(1<<I2C_SR1_SB)
+#define I2C_FLAG_OVR			(1<<I2C_SR1_OVR)
+#define I2C_FLAG_AF				(1<<I2C_SR1_AF)
+#define I2C_FLAG_ARLO			(1<<I2C_SR1_ARLO)
+#define I2C_FLAG_BERR			(1<<I2C_SR1_BERR)
+#define I2C_FLAG_STOPF			(1<<I2C_SR1_STOPF)
+#define I2C_FLAG_ADD10			(1<<I2C_SR1_ADD10)
+#define I2C_FLAG_BTF			(1<<I2C_SR1_BTF)
+#define I2C_FLAG_ADDR			(1<<I2C_SR1_ADDR)
+#define I2C_FLAG_TIMEOUT		(1<<I2C_SR1_TIMEOUT)
+
+
+/*
+ * ******* API supported by the drivers**********
+ *
+ */
+void I2C_PeriClockControl(I2C_RegDef_t *pI2Cx, uint8_t EnorDi);
+
+/*
+ * 	Init and Deint of the peripheral
+ */
+void I2C_Init(I2C_Handle_t *pI2CHandle);
+void I2C_DeInt(I2C_RegDef_t *pI2Cx);
+
+
+// data send and receive using the I2C pin
+
+// blocking(non interrupts) and non blocking the api
+
+
+
+void I2CMasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t SlaveAddr);
+
+
+void I2C_IRQConfig(uint8_t IRQNumber, uint8_t EnorDi);
+void I2C_IRQPriorityConfig(uint8_t IRQNumber,uint32_t IRQPriority);
+
+
+/*
+ * 	Other peripheral control APIs
+ */
+void I2C_PeripheralControl(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi);
+uint8_t I2C_GetFlagStatus(I2C_RegDef_t *pI2Cx, uint32_t FlagName);
+
+
+/*
+ * application callback
+ */
+void I2C_ApplicationEventCallback(I2C_Handle_t *pI2CHandle, uint8_t AppEv);
+
+
 #endif /* INC_STM32F407XX_I2C_DRIVER_H_ */

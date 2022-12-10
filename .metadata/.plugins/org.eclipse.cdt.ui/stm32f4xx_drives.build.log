@@ -1,16 +1,10 @@
-16:01:03 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+23:56:41 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
 make -j8 all 
-arm-none-eabi-gcc -o "stm32f4xx_drives.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Mcu_course github\mcu_course\stm32f4xx_drives\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drives.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f4xx_drives.elf
- 
 arm-none-eabi-size   stm32f4xx_drives.elf 
-arm-none-eabi-objdump -h -S  stm32f4xx_drives.elf  > "stm32f4xx_drives.list"
    text	   data	    bss	    dec	    hex	filename
    8700	    108	   2124	  10932	   2ab4	stm32f4xx_drives.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f4xx_drives.list
- 
 
-16:01:04 Build Finished. 0 errors, 0 warnings. (took 443ms)
+23:56:42 Build Finished. 0 errors, 0 warnings. (took 190ms)
 
