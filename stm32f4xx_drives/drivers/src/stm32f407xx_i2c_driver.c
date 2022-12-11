@@ -10,7 +10,7 @@ uint16_t AHB_PreScalar[8] = {2,4,8,16,64,128,256,512};
 uint8_t APB1_PreScalar[4] = { 2,4,8,16};
 
 
-static void I2CGenerateStartCondition(I2C_RegDef_t *pI2Cx)
+static void I2C_GenerateStartCondition(I2C_RegDef_t *pI2Cx)
 {
 	pI2Cx->CR1 |= (1<<I2C_CR1_START);
 }
@@ -35,6 +35,18 @@ static void I2C_GenerateStopCondition(I2C_RegDef_t *pI2Cx)
 }
 
 
+void I2C_PeripheralControl(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi)
+{
+	if(EnOrDi == ENABLE)
+	{
+		pI2Cx->CR1 |= (1 << I2C_CR1_PE);
+		//pI2cBaseAddress->CR1 |= I2C_CR1_PE_Bit_Mask;
+	}else
+	{
+		pI2Cx->CR1 &= ~(1 << 0);
+	}
+
+}
 
 void I2C_PeriClockControl(I2C_RegDef_t *pI2Cx, uint8_t EnorDi)
 {
@@ -56,6 +68,12 @@ void I2C_PeriClockControl(I2C_RegDef_t *pI2Cx, uint8_t EnorDi)
 	{
 		//TODO
 	}
+}
+
+uint32_t  RCC_GetPLLOutputClock()
+{
+
+	return 0;
 }
 
 uint32_t RCC_GetPCLK1Value(void)
@@ -113,6 +131,9 @@ void I2C_Init(I2C_Handle_t *pI2CHandle)
 {
 	uint32_t tempreg=0;
 
+	//enable the clock for
+	I2C_PeriClockControl(pI2CHandle->pI2Cx, ENABLE);
+
 	//configure the ack control bit
 	tempreg |= pI2CHandle->I2C_Config.I2C_ACKControl<<10;
 	pI2CHandle->pI2Cx->CR1 = tempreg;
@@ -152,6 +173,19 @@ void I2C_Init(I2C_Handle_t *pI2CHandle)
 		tempreg |= (ccr_value & 0xFFF);
 	}
 	pI2CHandle->pI2Cx->CCR = tempreg;
+
+	//TRISE Configuration
+	if(pI2CHandle->I2C_Config.I2C_SCLSpeed<= I2C_SCL_SPEED_SM)
+	{
+		//mode is standard mode
+		tempreg = (RCC_GetPCLK1Value()/1000000U)+1;
+	}
+	else
+	{
+		//mod eis fast mode
+		tempreg = ((RCC_GetPCLK1Value()*300)/1000000000U)+1;
+	}
+	pI2CHandle->pI2Cx->TRISE = (tempreg & 0x3F);
 }
 
 
@@ -172,17 +206,17 @@ uint8_t I2C_GetFlagStatus(I2C_RegDef_t *pI2Cx , uint32_t FlagName)
 	return FLAG_RESET;
 }
 
-void I2CMasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t SlaveAddr)
+void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t SlaveAddr)
 {
 	//1. Generate the START Condition
-	I2C_GenerateStartCondition();
+	I2C_GenerateStartCondition(pI2CHandle->pI2Cx);
 
 	//2. Confirm that start generation is completerd by checkin gthe SB flag in the SR1
 	// note: until SB is cleared SCL will be stretched(pulled to Low)
 	while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_FLAG_SB));
 
 	//3. SEND THE ADDRESS FOO THE SLAVE WITH R/NW BIT SET TO THE W(0)(total 8 bits)
-	I2C_ExecuteAddressPhase(pI2CHandle, SlaveAddr);
+	I2C_ExecuteAddressPhase(pI2CHandle->pI2Cx, SlaveAddr);
 
 	//4. COnfirm that the address phase is completed bby checking the Addr flag in thhe SR1
 	while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_FLAG_ADDR));

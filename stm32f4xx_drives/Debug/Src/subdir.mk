@@ -5,13 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/009spi_message_rcv_it.c 
+../Src/001led_toggle.c 
 
 OBJS += \
-./Src/009spi_message_rcv_it.o 
+./Src/001led_toggle.o 
 
 C_DEPS += \
-./Src/009spi_message_rcv_it.d 
+./Src/001led_toggle.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +21,7 @@ Src/%.o Src/%.su: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/009spi_message_rcv_it.d ./Src/009spi_message_rcv_it.o ./Src/009spi_message_rcv_it.su
+	-$(RM) ./Src/001led_toggle.d ./Src/001led_toggle.o ./Src/001led_toggle.su
 
 .PHONY: clean-Src
 

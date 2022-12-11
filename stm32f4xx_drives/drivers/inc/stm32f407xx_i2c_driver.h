@@ -82,7 +82,7 @@ void I2C_DeInt(I2C_RegDef_t *pI2Cx);
 
 
 
-void I2CMasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t SlaveAddr);
+void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t SlaveAddr);
 
 
 void I2C_IRQConfig(uint8_t IRQNumber, uint8_t EnorDi);
@@ -95,6 +95,7 @@ void I2C_IRQPriorityConfig(uint8_t IRQNumber,uint32_t IRQPriority);
 void I2C_PeripheralControl(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi);
 uint8_t I2C_GetFlagStatus(I2C_RegDef_t *pI2Cx, uint32_t FlagName);
 
+uint32_t  RCC_GetPLLOutputClock(void);
 
 /*
  * application callback
