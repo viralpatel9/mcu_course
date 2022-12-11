@@ -1,10 +1,10 @@
-20:55:40 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+21:03:53 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
 make -j8 all 
 arm-none-eabi-size   stm32f4xx_drives.elf 
    text	   data	    bss	    dec	    hex	filename
-   2116	      8	   1568	   3692	    e6c	stm32f4xx_drives.elf
+   3352	     60	   1588	   5000	   1388	stm32f4xx_drives.elf
 Finished building: default.size.stdout
  
 
-20:55:40 Build Finished. 0 errors, 0 warnings. (took 202ms)
+21:03:53 Build Finished. 0 errors, 0 warnings. (took 264ms)
 

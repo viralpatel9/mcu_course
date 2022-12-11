@@ -1,21 +1,94 @@
-20:54:31 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+20:59:45 **** Clean-only build of configuration Debug for project stm32f4xx_drives ****
+make -j8 clean 
+rm -rf ./drivers/src/stm32f407xx_gpio_driver.d ./drivers/src/stm32f407xx_gpio_driver.o ./drivers/src/stm32f407xx_gpio_driver.su ./drivers/src/stm32f407xx_i2c_driver.d ./drivers/src/stm32f407xx_i2c_driver.o ./drivers/src/stm32f407xx_i2c_driver.su ./drivers/src/stm32f407xx_spi_driver.d ./drivers/src/stm32f407xx_spi_driver.o ./drivers/src/stm32f407xx_spi_driver.su
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/001led_toggle.d ./Src/001led_toggle.o ./Src/001led_toggle.su
+rm -rf default.size.stdout stm32f4xx_drives.elf stm32f4xx_drives.list stm32f4xx_drives.map
+ 
+20:59:46 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_gpio_driver.d" -MT"drivers/src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/src/stm32f407xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_i2c_driver.d" -MT"drivers/src/stm32f407xx_i2c_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/src/stm32f407xx_i2c_driver.o"
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_spi_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_spi_driver.d" -MT"drivers/src/stm32f407xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/src/stm32f407xx_spi_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/001led_toggle.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/001led_toggle.d" -MT"Src/001led_toggle.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/001led_toggle.o"
+arm-none-eabi-gcc -o "stm32f4xx_drives.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Mcu_course github\mcu_course\stm32f4xx_drives\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drives.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drives.elf
+ 
+arm-none-eabi-size   stm32f4xx_drives.elf 
+arm-none-eabi-objdump -h -S  stm32f4xx_drives.elf  > "stm32f4xx_drives.list"
+   text	   data	    bss	    dec	    hex	filename
+   2116	      8	   1568	   3692	    e6c	stm32f4xx_drives.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drives.list
+ 
+21:00:01 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
 make -j8 all 
 arm-none-eabi-size   stm32f4xx_drives.elf 
    text	   data	    bss	    dec	    hex	filename
    2116	      8	   1568	   3692	    e6c	stm32f4xx_drives.elf
 Finished building: default.size.stdout
  
-20:55:14 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+21:00:03 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
 make -j8 all 
 arm-none-eabi-size   stm32f4xx_drives.elf 
    text	   data	    bss	    dec	    hex	filename
    2116	      8	   1568	   3692	    e6c	stm32f4xx_drives.elf
 Finished building: default.size.stdout
  
-20:55:40 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+21:00:29 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
 make -j8 all 
 arm-none-eabi-size   stm32f4xx_drives.elf 
    text	   data	    bss	    dec	    hex	filename
    2116	      8	   1568	   3692	    e6c	stm32f4xx_drives.elf
+Finished building: default.size.stdout
+ 
+21:01:10 **** Clean-only build of configuration Debug for project stm32f4xx_drives ****
+make -j8 clean 
+rm -rf ./drivers/src/stm32f407xx_gpio_driver.d ./drivers/src/stm32f407xx_gpio_driver.o ./drivers/src/stm32f407xx_gpio_driver.su ./drivers/src/stm32f407xx_i2c_driver.d ./drivers/src/stm32f407xx_i2c_driver.o ./drivers/src/stm32f407xx_i2c_driver.su ./drivers/src/stm32f407xx_spi_driver.d ./drivers/src/stm32f407xx_spi_driver.o ./drivers/src/stm32f407xx_spi_driver.su
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/001led_toggle.d ./Src/001led_toggle.o ./Src/001led_toggle.su
+rm -rf default.size.stdout stm32f4xx_drives.elf stm32f4xx_drives.list stm32f4xx_drives.map
+rm: can't remove 'stm32f4xx_drives.elf': Permission denied
+make: [makefile:80: clean] Error 1 (ignored)
+ 
+21:01:11 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_gpio_driver.d" -MT"drivers/src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/src/stm32f407xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_i2c_driver.d" -MT"drivers/src/stm32f407xx_i2c_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/src/stm32f407xx_i2c_driver.o"
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_spi_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_spi_driver.d" -MT"drivers/src/stm32f407xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/src/stm32f407xx_spi_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/010i2c_master_tx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/010i2c_master_tx_testing.d" -MT"Src/010i2c_master_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/010i2c_master_tx_testing.o"
+arm-none-eabi-gcc -o "stm32f4xx_drives.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Mcu_course github\mcu_course\stm32f4xx_drives\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drives.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drives.elf
+ 
+arm-none-eabi-size   stm32f4xx_drives.elf 
+arm-none-eabi-objdump -h -S  stm32f4xx_drives.elf  > "stm32f4xx_drives.list"
+   text	   data	    bss	    dec	    hex	filename
+   3352	     60	   1588	   5000	   1388	stm32f4xx_drives.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drives.list
+ 
+21:01:46 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+make -j8 all 
+arm-none-eabi-size   stm32f4xx_drives.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3352	     60	   1588	   5000	   1388	stm32f4xx_drives.elf
+Finished building: default.size.stdout
+ 
+21:02:22 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+make -j8 all 
+arm-none-eabi-size   stm32f4xx_drives.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3352	     60	   1588	   5000	   1388	stm32f4xx_drives.elf
+Finished building: default.size.stdout
+ 
+21:03:53 **** Incremental Build of configuration Debug for project stm32f4xx_drives ****
+make -j8 all 
+arm-none-eabi-size   stm32f4xx_drives.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3352	     60	   1588	   5000	   1388	stm32f4xx_drives.elf
 Finished building: default.size.stdout
  
