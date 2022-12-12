@@ -1,4 +1,4 @@
-Src/010i2c_master_tx_testing.o: ../Src/010i2c_master_tx_testing.c \
+Src/011i2c_master_rx_testing.o: ../Src/011i2c_master_rx_testing.c \
  C:/Mcu_course\ github/mcu_course/stm32f4xx_drives/drivers/inc/stm32f407xx.h \
  C:/Mcu_course\ github/mcu_course/stm32f4xx_drives/drivers/inc/stm32f407xx_gpio_driver.h \
  C:/Mcu_course\ github/mcu_course/stm32f4xx_drives/drivers/inc/stm32f407xx.h \

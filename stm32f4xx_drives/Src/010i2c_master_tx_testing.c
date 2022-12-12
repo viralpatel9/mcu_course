@@ -44,7 +44,7 @@ void I2C1_GPIOInits(void)
 	GPIO_Init(&I2CPins);
 
 	//sda
-	I2CPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_9;
+	I2CPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_7;
 	GPIO_Init(&I2CPins);
 
 }
@@ -100,6 +100,15 @@ int main(void)
 	//enable the i2c peripheral
 	I2C_PeripheralControl(I2C1, ENABLE);
 
+	while(1)
+	{
+		//wait till button is pressed
+		while( ! GPIO_ReadFromInputPin(GPIOA,GPIO_PIN_NO_0) );
+
+		//to avoid button de-bouncing related issues 200ms of delay
+		delay();
+
 	//send some data to the slave
 	I2C_MasterSendData(&I2C1Handle, some_data, strlen((char*)some_data), SLAVE_ADDR);
+	}
 }
