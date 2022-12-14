@@ -11,5 +11,9 @@
 ../drivers/src/stm32f407xx_i2c_driver.c:202:6:I2C_DeInt	16	static
 ../drivers/src/stm32f407xx_i2c_driver.c:207:9:I2C_GetFlagStatus	16	static
 ../drivers/src/stm32f407xx_i2c_driver.c:216:6:I2C_MasterSendData	24	static
-../drivers/src/stm32f407xx_i2c_driver.c:257:6:I2C_MasterReceiveData	32	static
-../drivers/src/stm32f407xx_i2c_driver.c:331:6:I2C_ManageAcking	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:259:6:I2C_MasterReceiveData	32	static
+../drivers/src/stm32f407xx_i2c_driver.c:352:6:I2C_MasterSendDataIT	32	static
+../drivers/src/stm32f407xx_i2c_driver.c:385:6:I2C_MasterReceiveDataIT	32	static
+../drivers/src/stm32f407xx_i2c_driver.c:416:6:I2C_ManageAcking	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:430:6:I2C_IRQConfig	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:436:6:I2C_IRQPriorityConfig	16	static
