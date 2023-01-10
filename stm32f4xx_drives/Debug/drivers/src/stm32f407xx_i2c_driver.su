@@ -17,3 +17,5 @@
 ../drivers/src/stm32f407xx_i2c_driver.c:416:6:I2C_ManageAcking	16	static
 ../drivers/src/stm32f407xx_i2c_driver.c:430:6:I2C_IRQConfig	16	static
 ../drivers/src/stm32f407xx_i2c_driver.c:436:6:I2C_IRQPriorityConfig	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:441:6:I2C_EV_IRQHandling	32	static
+../drivers/src/stm32f407xx_i2c_driver.c:480:6:I2C_ER_IRQHandling	16	static

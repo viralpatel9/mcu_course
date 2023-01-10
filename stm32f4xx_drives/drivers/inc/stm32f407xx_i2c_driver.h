@@ -103,7 +103,7 @@ void I2C_MasterSendDataIT(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t 
 void I2C_MasterReceiveDataIT(I2C_Handle_t  *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr, uint8_t Sr);
 
 /*
- * 		IRQ Configuraiton and ISR handling
+ * 		IRQ Configuration and ISR handling
  */
 void I2C_IRQConfig(uint8_t IRQNumber, uint8_t EnorDi);
 void I2C_IRQPriorityConfig(uint8_t IRQNumber,uint32_t IRQPriority);
