@@ -76,6 +76,12 @@ typedef struct
 #define I2C_BUSY_IN_RX			1
 #define I2C_BUSY_IN_TX			2
 
+/*
+ * 		I2C Application event macros
+ */
+#define I2C_EV_TX_CMPLT			0
+#define I2C_EV_RX_CMPLT 		1
+#define I2C_EV_STOP				2
 
 /*
  * ******* API supported by the drivers**********
@@ -101,6 +107,9 @@ void I2C_MasterReceiveData(I2C_Handle_t  *pI2CHandle, uint8_t *pRxBuffer, uint8_
 
 void I2C_MasterSendDataIT(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t SlaveAddr, uint8_t Sr);
 void I2C_MasterReceiveDataIT(I2C_Handle_t  *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr, uint8_t Sr);
+
+void I2C_CloseReceiveData(I2C_Handle_t *pI2CHandle);
+void I2C_CloseSendData(I2C_Handle_t *pI2CHandle);
 
 /*
  * 		IRQ Configuration and ISR handling
