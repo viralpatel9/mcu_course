@@ -5,13 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/011i2c_master_rx_testing.c 
+../Src/012i2c_master_rx_testingIT.c 
 
 OBJS += \
-./Src/011i2c_master_rx_testing.o 
+./Src/012i2c_master_rx_testingIT.o 
 
 C_DEPS += \
-./Src/011i2c_master_rx_testing.d 
+./Src/012i2c_master_rx_testingIT.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +21,7 @@ Src/%.o Src/%.su: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/011i2c_master_rx_testing.d ./Src/011i2c_master_rx_testing.o ./Src/011i2c_master_rx_testing.su
+	-$(RM) ./Src/012i2c_master_rx_testingIT.d ./Src/012i2c_master_rx_testingIT.o ./Src/012i2c_master_rx_testingIT.su
 
 .PHONY: clean-Src
 
