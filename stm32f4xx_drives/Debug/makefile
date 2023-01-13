@@ -52,6 +52,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 stm32f4xx_drives.list \
 
+OBJCOPY_BIN += \
+stm32f4xx_drives.bin \
+
 
 # All Target
 all: main-build
@@ -75,12 +78,17 @@ stm32f4xx_drives.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS
 	@echo 'Finished building: $@'
 	@echo ' '
 
+stm32f4xx_drives.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "stm32f4xx_drives.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) default.size.stdout stm32f4xx_drives.elf stm32f4xx_drives.list stm32f4xx_drives.map
+	-$(RM) default.size.stdout stm32f4xx_drives.bin stm32f4xx_drives.elf stm32f4xx_drives.list stm32f4xx_drives.map
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

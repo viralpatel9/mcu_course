@@ -2465,3 +2465,429 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-01-12 08:32:37.310
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 10:37:04.463
+!MESSAGE Indexed 'stm32f4xx_drives' (4 sources, 45 headers) in 0.146 sec: 1,881 declarations; 4,612 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 10:40:03.625
+!MESSAGE Indexed 'stm32f4xx_drives' (3 sources, 62 headers) in 0.161 sec: 2,611 declarations; 3,572 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.032%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 10:40:59.145
+!MESSAGE Indexed 'stm32f4xx_drives' (3 sources, 62 headers) in 0.246 sec: 2,611 declarations; 3,572 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.032%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:00.598
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:00.601
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:00.684
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:00.916
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:01.156
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:01.157
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:04.385
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:04.389
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:04.394
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:04.748
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:52:04.749
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:53:12.321
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:53:12.321
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 10:53:12.665
+!MESSAGE Indexed 'stm32f4xx_drives' (3 sources, 62 headers) in 0.26 sec: 2,611 declarations; 3,572 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.032%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:53:15.442
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:53:15.445
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:53:15.447
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:53:16.061
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:53:16.062
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:53:49.636
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:53:49.642
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:54:38.439
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:54:38.440
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:54:42.197
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:54:42.201
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:54:42.205
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:54:42.736
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:54:42.737
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:04.836
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:04.838
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:12.187
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:12.188
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:15.771
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:15.774
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:15.777
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:16.260
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:16.261
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:49.120
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:49.123
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 10:55:49.555
+!MESSAGE Indexed 'stm32f4xx_drives' (1 sources, 45 headers) in 0.244 sec: 1,649 declarations; 2,545 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:53.997
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:54.000
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:54.002
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:54.337
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:55:54.338
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:56:17.597
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:56:17.604
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:56:18.690
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:56:18.696
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:56:20.134
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 10:56:22.590
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:17.978
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:17.982
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:17.987
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:18.005
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:18.010
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:18.059
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:18.073
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:18.093
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:18.098
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:18.118
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:05:18.123
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:06:14.860
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:06:55.420
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:06:55.424
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:06:55.747
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:06:55.750
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:07:46.803
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:07:46.804
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:07:50.725
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:07:50.727
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:07:50.729
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:07:51.065
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:07:51.066
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:28.803
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:28.808
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:28.816
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:28.853
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:28.861
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:28.949
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:28.957
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:28.995
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:29.002
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:29.039
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:08:29.047
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:38.152
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:38.153
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:38.385
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:38.387
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 11:11:39.197
+!MESSAGE Indexed 'stm32f4xx_drives' (4 sources, 45 headers) in 0.397 sec: 1,881 declarations; 4,612 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:42.551
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:42.554
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:42.557
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:42.561
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:43.039
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:11:43.041
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:14:50.001
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:14:50.002
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:14:55.382
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:14:55.383
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:14:55.385
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:14:55.391
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:14:55.924
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:14:55.925
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:15:16.314
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:15:16.315
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 11:15:16.615
+!MESSAGE Indexed 'stm32f4xx_drives' (4 sources, 45 headers) in 0.279 sec: 1,881 declarations; 4,612 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:15:19.476
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:15:19.476
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:15:25.863
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:15:25.864
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 11:15:26.082
+!MESSAGE Indexed 'stm32f4xx_drives' (4 sources, 45 headers) in 0.198 sec: 1,881 declarations; 4,612 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:16:48.540
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:16:48.542
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:16:52.524
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:16:52.527
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:16:52.528
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:16:52.532
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:16:52.930
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:16:52.930
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:17:15.454
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:17:15.459
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:17:23.641
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:17:23.647
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:18:14.652
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:18:14.654
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 11:18:15.136
+!MESSAGE Indexed 'stm32f4xx_drives' (4 sources, 45 headers) in 0.29 sec: 1,881 declarations; 4,612 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:18:25.109
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:18:25.111
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:18:25.113
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:18:25.117
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:18:25.533
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2023-01-12 11:18:25.534
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1473680187
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 11:21:58.073
+!MESSAGE Indexed 'stm32f4xx_drives' (4 sources, 45 headers) in 0.436 sec: 1,881 declarations; 4,612 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 11:26:10.567
+!MESSAGE Indexed 'stm32f4xx_drives' (15 sources, 62 headers) in 0.349 sec: 2,780 declarations; 5,408 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 11:26:33.431
+!MESSAGE Indexed 'stm32f4xx_drives' (15 sources, 62 headers) in 0.319 sec: 2,780 declarations; 5,408 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 11:31:39.559
+!MESSAGE Indexed 'stm32f4xx_drives' (3 sources, 4 headers) in 0.055 sec: 379 declarations; 342 references; 14 unresolved inclusions; 0 syntax errors; 210 unresolved names (23%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-12 11:32:08.831
+!MESSAGE Indexed '004Peri_clock' (3 sources, 53 headers) in 0.123 sec: 1,951 declarations; 2,821 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-13 11:11:30.193
+!MESSAGE Indexed 'stm32f4xx_drives' (4 sources, 45 headers) in 0.564 sec: 1,881 declarations; 4,612 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
