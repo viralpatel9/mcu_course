@@ -1,0 +1,56 @@
+/*
+ * stm32f407xx_usart_driver.h
+ *
+ *  Created on: 13 Jan 2023
+ *      Author: ViralPatel
+ */
+
+#ifndef INC_STM32F407XX_USART_DRIVER_H_
+#define INC_STM32F407XX_USART_DRIVER_H_
+
+#include "stm32f407xx.h"
+
+//configuration structure for USARTx peripheral
+typedef struct
+{
+	uint8_t USART_Mode;
+	uint32_t USART_Baud;
+	uint32_t USART_NoofStopBits;
+	uint32_t USART_WordLength;
+	uint32_t USART_ParityControl;
+	uint32_t USART_HWFlowControl;
+}USART_Config_t;
+
+/*
+ *   Handle Structure for USARTx Peripheral
+ */
+typedef struct
+{
+	USART_RegDef_t *pUSARTx;
+	USART_Config_t USART_Config;
+}USART_Handle_t;
+
+/*
+ * 		USARTx mode control
+ */
+
+#define
+
+
+/*
+ * 	Impletement the below APIs by taking reference from I2C and SPI
+ */
+void USART_PeriClockControl (USART_RegDef_t *pUSARTx, uint8_t EnOrDi);
+void USART_PeripheralControl(USART_RegDef_t *pUSARTx, uint8_t EnOrDi);
+
+uint8_t USART_GetFlagStatus (USART_RegDef_t *pUSARTx, uint8_t StatusFlagName);
+void USART_ClearFlag (USART_RegDef_t *pUSARTx, uint16_t StatusFlagName);
+
+void USART_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi);
+void USART_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority);
+
+
+
+
+
+#endif /* INC_STM32F407XX_USART_DRIVER_H_ */

@@ -105,7 +105,7 @@ void SPI_PeriClockControl(SPI_RegDef_t *pSPIx, uint8_t EnorDi);
  * 	Init and Deint of the peripheral
  */
 void SPI_Init(SPI_Handle_t *pSPIHandle);
-void SPI_DeInt(SPI_RegDef_t *pSPIx);
+void SPI_DeInit(SPI_RegDef_t *pSPIx);
 
 
 // data send and receive using the spi pin

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="${workspace_loc:/${ProjName}/drivers/inc}"/>
 	<item key="LastUsedSourceTemplate" value="Default C source template"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="RELEASE"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
@@ -12,6 +12,7 @@
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="askReindex.detail" value="0"/>
+		<item key="askReindex" value="true"/>
 	</section>
 	<section name="org.eclipse.cdt.internal.ui.text.QuickOutline">
 		<item key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_WIDTH" value="500"/>
