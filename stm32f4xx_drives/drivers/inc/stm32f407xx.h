@@ -231,6 +231,14 @@ typedef struct
 #define I2C2						((I2C_RegDef_t*)I2C2_BASEADDR)
 #define I2C3						((I2C_RegDef_t*)I2C3_BASEADDR)
 
+#define USART1						((USART_RegDef_t*)USART1_BASEADDR)
+#define USART2						((USART_RegDef_t*)USART2_BASEADDR)
+#define USART3						((USART_RegDef_t*)USART3_BASEADDR)
+#define UART4						((USART_RegDef_t*)UART4_BASEADDR)
+#define UART5						((USART_RegDef_t*)UART5_BASEADDR)
+#define USART6						((USART_RegDef_t*)USART6_BASEADDR)
+
+
 // Clock enable macros for the GPIOx peripherals
 
 #define GPIOA_PCLK_EN() 	(RCC->AHB1ENR |=(1<<0))			// to enable the clock of the gpio, it is Bit 0 where the clock is present so that is enable as 1.(RCC AHB1ENR)
@@ -290,7 +298,7 @@ typedef struct
 #define USART1_PCLK_DI()			(RCC->APB2ENR &=~(1<<4))
 #define USART2_PCLK_DI()			(RCC->APB1ENR &=~(1<<17))
 #define USART3_PCLK_DI()			(RCC->APB1ENR &=~(1<<18))
-#define USART6_PCLK_DI()			(RCC->APB2ENR &=~(1<<5)
+#define USART6_PCLK_DI()			(RCC->APB2ENR &=~(1<<5))
 
 //Clock disable macro for sys clock
 #define SYSCFG_PCLK_DI()			(RCC->APB2ENR &=~(1<<14))
@@ -469,7 +477,7 @@ typedef struct
 //bit position definition for USART
 #define USART_SR_PE				0
 #define USART_SR_FE				1
-#define USART_SR_NF				2
+#define USART_SR_NE				2
 #define USART_SR_ORE			3
 #define USART_SR_IDLE			4
 #define USART_SR_RXNE			5
@@ -530,5 +538,6 @@ typedef struct
 #include "stm32f407xx_usart_driver.h"
 #include "stm32f407xx_spi_driver.h"
 #include "stm32f407xx_i2c_driver.h"
+#include "stm32f407xx_rcc_driver.h"
 
 #endif /* INC_STM32F407XX_H_ */

@@ -5,13 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/013i2c_slave_tx_string.c 
+../Src/015uart_tx.c 
 
 OBJS += \
-./Src/013i2c_slave_tx_string.o 
+./Src/015uart_tx.o 
 
 C_DEPS += \
-./Src/013i2c_slave_tx_string.d 
+./Src/015uart_tx.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +21,7 @@ Src/%.o Src/%.su: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/013i2c_slave_tx_string.d ./Src/013i2c_slave_tx_string.o ./Src/013i2c_slave_tx_string.su
+	-$(RM) ./Src/015uart_tx.d ./Src/015uart_tx.o ./Src/015uart_tx.su
 
 .PHONY: clean-Src
 
