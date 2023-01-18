@@ -362,6 +362,16 @@ typedef struct
 #define	IRQ_NO_I2C3_EV		72
 #define	IRQ_NO_I2C3_ER		73
 
+/*
+ * 			IRQ definition for USART
+ */
+#define IRQ_NO_USART1	    37
+#define IRQ_NO_USART2	    38
+#define IRQ_NO_USART3	    39
+#define IRQ_NO_UART4	    52
+#define IRQ_NO_UART5	    53
+#define IRQ_NO_USART6	    71
+
 
 /*
  * mACROS FOR ALL THE POSSIBLITY PRIORITY
