@@ -5,13 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/001led_toggle.c 
+../Src/016uart_case.c 
 
 OBJS += \
-./Src/001led_toggle.o 
+./Src/016uart_case.o 
 
 C_DEPS += \
-./Src/001led_toggle.d 
+./Src/016uart_case.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +21,7 @@ Src/%.o Src/%.su: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/001led_toggle.d ./Src/001led_toggle.o ./Src/001led_toggle.su
+	-$(RM) ./Src/016uart_case.d ./Src/016uart_case.o ./Src/016uart_case.su
 
 .PHONY: clean-Src
 

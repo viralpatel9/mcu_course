@@ -1,23 +1,159 @@
-19:32:22 **** Clean-only build of configuration Debug for project 004Peri_clock ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
-rm -rf ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 004Peri_clock.elf 004Peri_clock.list 004Peri_clock.map default.size.stdout
- 
-19:32:22 **** Incremental Build of configuration Debug for project 004Peri_clock ****
+23:55:32 **** Incremental Build of configuration Release for project stm32f4xx_drives ****
 make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "004Peri_clock.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Mcu_course github\mcu_course\004Peri_clock\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004Peri_clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 004Peri_clock.elf
- 
-arm-none-eabi-size   004Peri_clock.elf 
-arm-none-eabi-objdump -h -S  004Peri_clock.elf  > "004Peri_clock.list"
-   text	   data	    bss	    dec	    hex	filename
-    716	      8	   1568	   2292	    8f4	004Peri_clock.elf
-Finished building: default.size.stdout
- 
-Finished building: 004Peri_clock.list
- 
+arm-none-eabi-gcc "../bsp/ds1307.c" -mcpu=cortex-m4 -std=gnu11 -DRELEASE -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O3 -ffunction-sections -fdata-sections -Wall -Wextra -fstack-usage -MMD -MP -MF"bsp/ds1307.d" -MT"bsp/ds1307.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "bsp/ds1307.o"
+arm-none-eabi-gcc "../bsp/lcd.c" -mcpu=cortex-m4 -std=gnu11 -DRELEASE -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O3 -ffunction-sections -fdata-sections -Wall -Wextra -fstack-usage -MMD -MP -MF"bsp/lcd.d" -MT"bsp/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "bsp/lcd.o"
+arm-none-eabi-gcc "../Src/013i2c_slave_tx_string.c" -mcpu=cortex-m4 -std=gnu11 -DRELEASE -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O3 -ffunction-sections -fdata-sections -Wall -Wextra -fstack-usage -MMD -MP -MF"Src/013i2c_slave_tx_string.d" -MT"Src/013i2c_slave_tx_string.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/013i2c_slave_tx_string.o"
+arm-none-eabi-gcc "../Src/014i2c_slave_tx_string2.c" -mcpu=cortex-m4 -std=gnu11 -DRELEASE -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O3 -ffunction-sections -fdata-sections -Wall -Wextra -fstack-usage -MMD -MP -MF"Src/014i2c_slave_tx_string2.d" -MT"Src/014i2c_slave_tx_string2.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/014i2c_slave_tx_string2.o"
+arm-none-eabi-gcc "../Src/015uart_tx.c" -mcpu=cortex-m4 -std=gnu11 -DRELEASE -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O3 -ffunction-sections -fdata-sections -Wall -Wextra -fstack-usage -MMD -MP -MF"Src/015uart_tx.d" -MT"Src/015uart_tx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/015uart_tx.o"
+arm-none-eabi-gcc "../Src/016uart_case.c" -mcpu=cortex-m4 -std=gnu11 -DRELEASE -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O3 -ffunction-sections -fdata-sections -Wall -Wextra -fstack-usage -MMD -MP -MF"Src/016uart_case.d" -MT"Src/016uart_case.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/016uart_case.o"
+arm-none-eabi-gcc "../Src/017rtc_lcd.c" -mcpu=cortex-m4 -std=gnu11 -DRELEASE -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O3 -ffunction-sections -fdata-sections -Wall -Wextra -fstack-usage -MMD -MP -MF"Src/017rtc_lcd.d" -MT"Src/017rtc_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/017rtc_lcd.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -DRELEASE -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O3 -ffunction-sections -fdata-sections -Wall -Wextra -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+../Src/013i2c_slave_tx_string.c: In function 'main':
+../Src/013i2c_slave_tx_string.c:95:10: warning: unused variable 'len' [-Wunused-variable]
+   95 |  uint8_t len;
+      |          ^~~
+../Src/013i2c_slave_tx_string.c:93:10: warning: unused variable 'commandcode' [-Wunused-variable]
+   93 |  uint8_t commandcode;
+      |          ^~~~~~~~~~~
+../Src/014i2c_slave_tx_string2.c: In function 'I2C_ApplicationEventCallback':
+../Src/014i2c_slave_tx_string2.c:126:49: warning: unused parameter 'pI2CHandle' [-Wunused-parameter]
+  126 | void I2C_ApplicationEventCallback(I2C_Handle_t *pI2CHandle, uint8_t AppEv)
+      |                                   ~~~~~~~~~~~~~~^~~~~~~~~~
+../Src/syscalls.c: In function '_kill':
+../Src/syscalls.c:48:15: warning: unused parameter 'pid' [-Wunused-parameter]
+   48 | int _kill(int pid, int sig) {
+      |           ~~~~^~~
+../Src/syscalls.c:48:24: warning: unused parameter 'sig' [-Wunused-parameter]
+   48 | int _kill(int pid, int sig) {
+      |                    ~~~~^~~
+../Src/syscalls.c: In function '_read':
+../Src/syscalls.c:59:37: warning: unused parameter 'file' [-Wunused-parameter]
+   59 | __attribute__((weak)) int _read(int file, char *ptr, int len) {
+      |                                 ~~~~^~~~
+../Src/syscalls.c: In function '_write':
+../Src/syscalls.c:69:38: warning: unused parameter 'file' [-Wunused-parameter]
+   69 | __attribute__((weak)) int _write(int file, char *ptr, int len) {
+      |                                  ~~~~^~~~
+../Src/syscalls.c: In function '_close':
+../Src/syscalls.c:78:16: warning: unused parameter 'file' [-Wunused-parameter]
+   78 | int _close(int file) {
+      |            ~~~~^~~~
+../Src/syscalls.c: In function '_fstat':
+../Src/syscalls.c:82:16: warning: unused parameter 'file' [-Wunused-parameter]
+   82 | int _fstat(int file, struct stat *st) {
+      |            ~~~~^~~~
+../Src/syscalls.c: In function '_isatty':
+../Src/syscalls.c:87:17: warning: unused parameter 'file' [-Wunused-parameter]
+   87 | int _isatty(int file) {
+      |             ~~~~^~~~
+../Src/syscalls.c: In function '_lseek':
+../Src/syscalls.c:91:16: warning: unused parameter 'file' [-Wunused-parameter]
+   91 | int _lseek(int file, int ptr, int dir) {
+      |            ~~~~^~~~
+../Src/016uart_case.c: In function 'USART_ApplicationEventCallback':
+../Src/syscalls.c:91:26: warning: unused parameter 'ptr' [-Wunused-parameter]
+   91 | int _lseek(int file, int ptr, int dir) {
+      |                      ~~~~^~~
+../Src/016uart_case.c:162:54: warning: unused parameter 'pUSARTHandle' [-Wunused-parameter]
+  162 | void USART_ApplicationEventCallback( USART_Handle_t *pUSARTHandle,uint8_t ApEv)
+      |                                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+../Src/syscalls.c:91:35: warning: unused parameter 'dir' [-Wunused-parameter]
+   91 | int _lseek(int file, int ptr, int dir) {
+      |                               ~~~~^~~
+../Src/syscalls.c: In function '_open':
+../Src/syscalls.c:95:17: warning: unused parameter 'path' [-Wunused-parameter]
+   95 | int _open(char *path, int flags, ...) {
+      |           ~~~~~~^~~~
+../Src/syscalls.c:95:27: warning: unused parameter 'flags' [-Wunused-parameter]
+   95 | int _open(char *path, int flags, ...) {
+      |                       ~~~~^~~~~
+../Src/syscalls.c: In function '_wait':
+../Src/syscalls.c:100:16: warning: unused parameter 'status' [-Wunused-parameter]
+  100 | int _wait(int *status) {
+      |           ~~~~~^~~~~~
+../Src/syscalls.c: In function '_unlink':
+../Src/syscalls.c:105:19: warning: unused parameter 'name' [-Wunused-parameter]
+  105 | int _unlink(char *name) {
+      |             ~~~~~~^~~~
+../Src/syscalls.c: In function '_times':
+../Src/syscalls.c:110:24: warning: unused parameter 'buf' [-Wunused-parameter]
+  110 | int _times(struct tms *buf) {
+      |            ~~~~~~~~~~~~^~~
+../Src/syscalls.c: In function '_stat':
+../Src/syscalls.c:114:17: warning: unused parameter 'file' [-Wunused-parameter]
+  114 | int _stat(char *file, struct stat *st) {
+      |           ~~~~~~^~~~
+../Src/syscalls.c: In function '_link':
+../Src/syscalls.c:119:17: warning: unused parameter 'old' [-Wunused-parameter]
+  119 | int _link(char *old, char *new) {
+      |           ~~~~~~^~~
+../Src/syscalls.c:119:28: warning: unused parameter 'new' [-Wunused-parameter]
+  119 | int _link(char *old, char *new) {
+      |                      ~~~~~~^~~
+../Src/syscalls.c: In function '_execve':
+../Src/syscalls.c:129:19: warning: unused parameter 'name' [-Wunused-parameter]
+  129 | int _execve(char *name, char **argv, char **env) {
+      |             ~~~~~~^~~~
+../Src/syscalls.c:129:32: warning: unused parameter 'argv' [-Wunused-parameter]
+  129 | int _execve(char *name, char **argv, char **env) {
+      |                         ~~~~~~~^~~~
+../Src/syscalls.c:129:45: warning: unused parameter 'env' [-Wunused-parameter]
+  129 | int _execve(char *name, char **argv, char **env) {
+      |                                      ~~~~~~~^~~
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -DRELEASE -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Mcu_course github/mcu_course/stm32f4xx_drives/drivers/inc" -O3 -ffunction-sections -fdata-sections -Wall -Wextra -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "stm32f4xx_drives.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Mcu_course github\mcu_course\stm32f4xx_drives\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drives.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o: in function `delay':
+014i2c_slave_tx_string2.c:(.text.delay+0x0): multiple definition of `delay'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.delay+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o: in function `I2C1_GPIOInits':
+014i2c_slave_tx_string2.c:(.text.I2C1_GPIOInits+0x0): multiple definition of `I2C1_GPIOInits'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.I2C1_GPIOInits+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o: in function `I2C1_Inits':
+014i2c_slave_tx_string2.c:(.text.I2C1_Inits+0x0): multiple definition of `I2C1_Inits'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.I2C1_Inits+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o: in function `GPIO_ButtonInit':
+014i2c_slave_tx_string2.c:(.text.GPIO_ButtonInit+0x0): multiple definition of `GPIO_ButtonInit'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.GPIO_ButtonInit+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o: in function `main':
+014i2c_slave_tx_string2.c:(.text.startup.main+0x0): multiple definition of `main'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.startup.main+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o: in function `I2C_ApplicationEventCallback':
+014i2c_slave_tx_string2.c:(.text.I2C_ApplicationEventCallback+0x0): multiple definition of `I2C_ApplicationEventCallback'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.I2C_ApplicationEventCallback+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o:(.bss.I2C1Handle+0x0): multiple definition of `I2C1Handle'; ./Src/013i2c_slave_tx_string.o:(.bss.I2C1Handle+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o:(.data.Tx_buf+0x0): multiple definition of `Tx_buf'; ./Src/013i2c_slave_tx_string.o:(.data.Tx_buf+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/015uart_tx.o: in function `GPIO_ButtonInit':
+015uart_tx.c:(.text.GPIO_ButtonInit+0x0): multiple definition of `GPIO_ButtonInit'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.GPIO_ButtonInit+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/015uart_tx.o: in function `delay':
+015uart_tx.c:(.text.delay+0x0): multiple definition of `delay'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.delay+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/015uart_tx.o: in function `main':
+015uart_tx.c:(.text.startup.main+0x0): multiple definition of `main'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.startup.main+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/016uart_case.o: in function `USART2_Init':
+016uart_case.c:(.text.USART2_Init+0x0): multiple definition of `USART2_Init'; ./Src/015uart_tx.o:015uart_tx.c:(.text.USART2_Init+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/016uart_case.o: in function `USART2_GPIOInit':
+016uart_case.c:(.text.USART2_GPIOInit+0x0): multiple definition of `USART2_GPIOInit'; ./Src/015uart_tx.o:015uart_tx.c:(.text.USART2_GPIOInit+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/016uart_case.o: in function `GPIO_ButtonInit':
+016uart_case.c:(.text.GPIO_ButtonInit+0x0): multiple definition of `GPIO_ButtonInit'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.GPIO_ButtonInit+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/016uart_case.o: in function `delay':
+016uart_case.c:(.text.delay+0x0): multiple definition of `delay'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.delay+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/016uart_case.o: in function `main':
+016uart_case.c:(.text.startup.main+0x0): multiple definition of `main'; ./Src/013i2c_slave_tx_string.o:013i2c_slave_tx_string.c:(.text.startup.main+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/016uart_case.o:(.bss.usart2_handle+0x0): multiple definition of `usart2_handle'; ./Src/015uart_tx.o:(.bss.usart2_handle+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/016uart_case.o:(.data.msg+0x0): multiple definition of `msg'; ./Src/015uart_tx.o:(.data.msg+0x0): first defined here
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/013i2c_slave_tx_string.o: in function `I2C1_GPIOInits':
+013i2c_slave_tx_string.c:(.text.I2C1_GPIOInits+0x16): undefined reference to `GPIO_Init'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: 013i2c_slave_tx_string.c:(.text.I2C1_GPIOInits+0x22): undefined reference to `GPIO_Init'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/013i2c_slave_tx_string.o: in function `GPIO_ButtonInit':
+013i2c_slave_tx_string.c:(.text.GPIO_ButtonInit+0x10): undefined reference to `GPIO_Init'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: 013i2c_slave_tx_string.c:(.text.GPIO_ButtonInit+0x22): undefined reference to `GPIO_PeriClockControl'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: 013i2c_slave_tx_string.c:(.text.GPIO_ButtonInit+0x28): undefined reference to `GPIO_Init'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/013i2c_slave_tx_string.o: in function `main':
+013i2c_slave_tx_string.c:(.text.startup.main+0x20): undefined reference to `I2C_Init'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: 013i2c_slave_tx_string.c:(.text.startup.main+0x28): undefined reference to `I2C_IRQInterruptConfig'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: 013i2c_slave_tx_string.c:(.text.startup.main+0x30): undefined reference to `I2C_IRQInterruptConfig'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: 013i2c_slave_tx_string.c:(.text.startup.main+0x38): undefined reference to `I2C_SlaveEnableDisableCallbackEvents'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: 013i2c_slave_tx_string.c:(.text.startup.main+0x40): undefined reference to `I2C_PeripheralControl'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: 013i2c_slave_tx_string.c:(.text.startup.main+0x48): undefined reference to `I2C_ManageAcking'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o: in function `I2C1_EV_IRQHandler':
+014i2c_slave_tx_string2.c:(.text.I2C1_EV_IRQHandler+0x2): undefined reference to `I2C_EV_IRQHandling'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/014i2c_slave_tx_string2.o: in function `I2C1_ER_IRQHandler':
+014i2c_slave_tx_string2.c:(.text.I2C1_ER_IRQHandler+0x2): undefined reference to `I2C_ER_IRQHandling'
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Src/016uart_case.o: in function `USART2_IRQHandler':
+016uart_case.c:(.text.USART2_IRQHandler+0x2): undefined reference to `USART_IRQHandling'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:67: stm32f4xx_drives.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.

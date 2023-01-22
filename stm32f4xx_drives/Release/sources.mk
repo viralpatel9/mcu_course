@@ -24,4 +24,5 @@ OBJCOPY_BIN :=
 SUBDIRS := \
 Src \
 Startup \
+bsp \
 

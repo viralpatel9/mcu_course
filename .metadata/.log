@@ -3218,3 +3218,15 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-01-21 19:32:19.257
 !MESSAGE Indexed '004Peri_clock' (3 sources, 53 headers) in 0.889 sec: 1,951 declarations; 2,821 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-21 23:36:33.270
+!MESSAGE Indexed 'stm32f4xx_drives' (6 sources, 66 headers) in 0.721 sec: 2,757 declarations; 4,180 references; 0 unresolved inclusions; 1 syntax errors; 3 unresolved names (0.043%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-21 23:38:12.583
+!MESSAGE Indexed 'stm32f4xx_drives' (6 sources, 15 headers) in 0.142 sec: 752 declarations; 3,618 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-21 23:39:40.298
+!MESSAGE Indexed 'stm32f4xx_drives' (6 sources, 66 headers) in 0.298 sec: 2,757 declarations; 4,181 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.029%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-21 23:40:37.243
+!MESSAGE Indexed '004Peri_clock' (3 sources, 53 headers) in 0.187 sec: 1,951 declarations; 2,821 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)

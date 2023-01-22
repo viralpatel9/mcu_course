@@ -2,16 +2,14 @@
     "version": "2.0.0",
     "configurations": [
         {
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceFolder}",
             "executable": "./Debug/004Peri_clock.elf",
-            "name": "Debug with OpenOCD",
+            "name": "Debug with ST-Util",
             "request": "launch",
             "type": "cortex-debug",
-            "servertype": "openocd",
-            "configFiles": [],
-            "searchDir": [],
             "runToEntryPoint": "main",
-            "showDevDebugOutput": "none"
+            "showDevDebugOutput": "none",
+            "servertype": "stutil"
         }
     ]
 }
