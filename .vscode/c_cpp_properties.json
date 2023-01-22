@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/stm32f4xx_drives/**"
+                "${workspaceFolder}/stm32f4xx_drives/**",
+                "${workspaceFolder}/stm32f4xx_drives/drivers/inc"
             ],
             "defines": [
                 "_DEBUG",
@@ -20,13 +21,11 @@
                 "path": [
                     "${workspaceFolder}/**",
                     "${workspaceFolder}/stm32f4xx_drives/drivers/inc/**"
-
                 ],
                 "limitSymbolsToIncludedHeaders": true
             },
             "configurationProvider": "ms-vscode.makefile-tools"
         }
-        
     ],
     "version": 4
 }
