@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 22:47:37 **** Incremental Build of configuration Debug for project 002SampleApp ****
 make -j8 all 
 arm-none-eabi-size   002SampleApp.elf 
@@ -8,3 +9,22 @@ Finished building: default.size.stdout
 
 22:47:37 Build Finished. 0 errors, 0 warnings. (took 180ms)
 
+=======
+22:18:12 **** Incremental Build of configuration Debug for project 002SampleApp ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM3240G_EVAL -DSTM32 -DSTM32F407IGHx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "002SampleApp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Mcu_course github\mcu_course\002SampleApp\STM32F407IGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002SampleApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002SampleApp.elf
+ 
+arm-none-eabi-size   002SampleApp.elf 
+arm-none-eabi-objdump -h -S  002SampleApp.elf  > "002SampleApp.list"
+   text	   data	    bss	    dec	    hex	filename
+   6720	    180	   1588	   8488	   2128	002SampleApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: 002SampleApp.list
+ 
+
+22:18:13 Build Finished. 0 errors, 0 warnings. (took 530ms)
+
+>>>>>>> test-code
