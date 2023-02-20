@@ -1,10 +1,16 @@
-23:40:41 **** Incremental Build of configuration Release for project 004Peri_clock ****
+13:55:00 **** Incremental Build of configuration Release for project 004Peri_clock ****
 make -j8 all 
+arm-none-eabi-gcc -o "004Peri_clock.elf" @"objects.list"  -Wl,--start-group  -Wl,--end-group -mcpu=cortex-m4 -T"C:\Mcu_course github\mcu_course\004Peri_clock\STM32F407VGTX_FLASH.ld" -Wl,-Map="004Peri_clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004Peri_clock.elf
+ 
 arm-none-eabi-size   004Peri_clock.elf 
+arm-none-eabi-objdump -h -S  004Peri_clock.elf  > "004Peri_clock.list"
    text	   data	    bss	    dec	    hex	filename
     700	      8	   1568	   2276	    8e4	004Peri_clock.elf
 Finished building: default.size.stdout
  
+Finished building: 004Peri_clock.list
+ 
 
-23:40:41 Build Finished. 0 errors, 0 warnings. (took 173ms)
+13:55:01 Build Finished. 0 errors, 0 warnings. (took 513ms)
 
