@@ -1,0 +1,27 @@
+name: Build
+
+# Define the trigger event(s)
+on: push
+
+# Jobs run in parallel by default, each runs steps in sequence
+jobs:
+
+    compile-firmware:
+        runs-on: ubuntu-latest
+        steps:
+        
+          - name: Check out this repo and submodules
+            uses: actions/checkout@v3
+            with:
+              submodules: 'true'
+
+          - name : Update the submodules
+            run: |
+              git submodule update --init --recursive
+              git submodule update --recursive --remote
+          
+          - name: Build stm32CubeIDE project
+            uses: xanderhendriks/action-build-stm32cubeide@v10.0
+            with:
+              project-path: '001HelloWorld'
+              project-target: '001HelloWorld/Debug'
